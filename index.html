@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Management App</title>
+</head>
+<body>
+    <h1>Data Management App</h1>
+    <h2>Create New Data</h2>
+    <form action="/create" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Read Existing Data</h2>
+    <form action="/read" method="GET">
+        <button type="submit">Read Data</button>
+    </form>
+
+    <h2>Update Existing Data</h2>
+    <form action="/update" method="POST">
+        <label for="nameToUpdate">Name to Update:</label>
+        <input type="text" id="nameToUpdate" name="nameToUpdate" required>
+        <label for="updatedAge">Updated Age:</label>
+        <input type="number" id="updatedAge" name="updatedAge" required>
+        <button type="submit">Update</button>
+    </form>
+
+    <h2>Delete Existing Data</h2>
+    <form action="/delete" method="POST">
+        <label for="nameToDelete">Name to Delete:</label>
+        <input type="text" id="nameToDelete" name="nameToDelete" required>
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>
